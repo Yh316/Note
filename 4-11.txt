@@ -1,0 +1,58 @@
+用typeof检测数据类型
+ var num =10;
+console.log(typeof num); 控制台显示为number
+
+可以通过控制台显示的颜色来判断数据类型
+蓝色-数字型
+黑色-字符串型
+深蓝色-布尔型
+浅灰色-undefined null
+
+字面量的含义
+通过字面量表达这个值
+数字字面量：8，9，10
+字符串字面量：'文字'
+不二字面量：true，false
+
+数据类型转换
+1.其他类型转为字符串型 
+1.1变量.toString()
+var num =18;
+var str = num.toString();
+console.log(str);
+1.2利用String(变量)
+console.log(String(num));
+1.3利用 + 拼接字符串的方法实现转换  也称为隐式转换
+console.log(num + '');   使用最多的转换方法
+
+***2.转换为数字型
+*2.1 parseInt(变量) 可以把字符型的数据转换为数字型 得到的是整数
+var age =prompt('请输入您的年龄)
+console.log(parseInt(age)); 
+console.log(parseInt('3.14')); 3 取整数
+*2.2 parseFloat(变量) 可以把字符型的数据转换为数字型 得到的是数字本身
+console.log(parseInt('3.14')); 3.14 
+2.3 利用Number(变量)
+console.log(Number('12')); 12
+2.4 利用算术运算 - * / 隐式转换
+console.log('12' - 0); 得到的是12
+console.log('123' - '120'); 得到的是3
+但是如果是加号，得到的就是字符型的123120
+
+3.转换为布尔型
+直接用Boolean()
+
+运算符 operator  也称作操作符
+1.算术运算符
++
+-
+*
+/
+%
+
+表达式和返回值
+由数字、运算符、变量等组成的式子，称为表达式  1+1
+
+返回值就是
+var num = 1 + 1 
+2 = 1 + 1 吧右边表达式计算完毕返回值给左边
